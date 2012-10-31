@@ -11,7 +11,19 @@
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= f.submit %>
+  <div class="field">
+	<%= f.label :name %><br/>
+	<%= f.text_field :name %>
   </div>
+  <div class="field">
+	<%= f.label :price %><br/>
+	<%= f.text_field :price %>
+  </div>
+  <div class="field">
+	<%= f.label :writer %><br/>
+	<%= f.text_field :writer %>
+  </div>
+  <div class="actions"> 
+    <%= f.submit %> 
+  </div> 
 <% end %>
